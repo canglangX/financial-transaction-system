@@ -116,7 +116,7 @@ public class FetchTask extends TimerTask {
     }
 
     private int compareTime(OrderCmd o1, OrderCmd o2) {
-        if(o1.timestamp > o2.timestamp) {
+        if(o1.timestamp > o2.timestamp) {//要求时间优先，但这样是时间在后的排到前面啊
             return 1;
         } else if(o1.timestamp < o2.timestamp) {
             return -1;
